@@ -1,0 +1,22 @@
+{
+  "name": "rxjs-dom",
+  "version": "4.0.4",
+  "main": "dist/rx.dom.js",
+  "dependencies": {
+    "rxjs": "*"
+  },
+  "ignore": [
+    ".*",
+    "*.bat",
+    "*.md",
+    "*.min.*",
+    "*.txt",
+    "*.log",
+    "package.json",
+    "node_modules",
+    "doc",
+    "examples",
+    "src",
+    "tests"
+  ]
+}

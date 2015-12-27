@@ -1,0 +1,51 @@
+@background: #3e313c;
+
+.team-selector {
+  width: 64px;
+  height: 100%;
+  background-color: @background;
+  display: none;
+
+  flex-direction: column;
+  align-items: stretch;
+  font-family: Lato, Lucida Grande, sans-serif;
+  font-size: 0.75em;
+  overflow-y: hidden;
+
+  -webkit-transition: background-color 0.1s ease-out;
+
+  ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .team-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  span {
+    justify-content: center;
+    align-items: center;
+  }
+
+  -webkit-user-select: none;
+}
+
+.team-spacer {
+  flex-grow: 1;
+}
+
+.team-add-button {
+  margin: 0 auto 0 auto !important;
+
+  li {
+    font-size: 50px;
+    font-family: 'Comic Sans MS';
+    display: inline;
+    opacity: 0.5;
+  }
+}

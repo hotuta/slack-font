@@ -1,0 +1,164 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.notification-host {
+  width: 98%;
+  height: 100%;
+  float: right;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  font-family: Lato, Meiryo, Lucida Grande, sans-serif;
+}
+
+.notification-item {
+  width: 100%;
+  height: 72px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  list-style-type: none;
+  cursor: default;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  border-width: 2px;
+  border-style: solid;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  min-height: 72px;
+  max-width: 72px;
+  max-height: 72px;
+}
+
+.notification-icon {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  min-height: 72px;
+  max-width: 72px;
+  max-height: 72px;
+}
+
+.initials-host {
+  display: flex;
+  position: absolute;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  width: 72px;
+  height: 72px;
+}
+
+.initials {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.text-content {
+  font-size: 0.8em;
+  padding-left: 1em;
+}
+
+.title {
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  padding-right: 2em;
+  -webkit-line-clamp: 1;
+}
+
+.message {
+  margin-top: 0.33em;
+  padding-right: 4em;
+  -webkit-line-clamp: 2;
+}
+
+.emoji {
+  max-height: 18px;
+  margin-top: -4px;
+  vertical-align: middle;
+}
+
+.limit-text-lines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.notif-close-button {
+  position: absolute;
+  right: 5px;
+
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+
+  opacity: 0.2;
+   -webkit-transition: all 0.4s ease-out;
+}
+
+.notification-content:hover > .notif-close-button {
+  opacity: 1;
+   -webkit-transition: all 0.25s ease-in;
+}
+
+.hash {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+}
+
+.animated {
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+}
+
+.pageInRight {
+  -webkit-animation-name: pageInRight;
+}
+
+.collapseHeight {
+  -webkit-animation-name: collapseHeight;
+}
+
+@-webkit-keyframes pageInRight {
+  0% { -webkit-transform: perspective(300px) rotateY(90deg); }
+  100% { -webkit-transform: none; }
+}
+
+@-webkit-keyframes collapseHeight {
+  0% { opacity: 1; }
+  100% { opacity: 0; height: 0; margin-top: 0; margin-bottom: 0; }
+}

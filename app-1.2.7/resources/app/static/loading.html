@@ -1,0 +1,32 @@
+<!-- NB: This isn't a normal HTML file, it's pulled into index.html via
+     an HTML Import tag. It *must* have a single root div -->
+
+<head>
+  <link rel="stylesheet" type="text/css" href="lato.css" />
+  <link rel="stylesheet" type="text/css" href="loading.less" />
+</head>
+
+<div class="contain">
+  <div class="offline">
+    <img class="" width="362" height="102" src="offline.png" /><br>
+    <span class="text_holder">
+      It appears you don't have an Internet connection right now.<br>
+      <span class="green">Slack will attempt to automatically reconnect.</span>
+      <br><br><center><a class="btn retry">Try now</a></center>
+    </span>
+  </div>
+
+  <div class="slackdown">
+    <img class="" width="284" height="284" src="slackdown.png" /><br>
+    <span class="text_holder">
+      The Slack service appears to be unavailable. Please check <a href="http://status.slack.com" target="status">status.slack.com</a>.<br>
+      We'll automatically try to connect again momentarily.
+      <br><br><center><a class="btn retry">Try now</a></center>
+    </span>
+  </div>
+
+  <div class="trying">
+    <img width="90" height="90" src="trying.gif" srcset="trying.gif 1x, trying@2x.gif 2x" />
+    <span class="text_holder" class="connecting">Connecting ...</span>
+  </div>
+</div>
